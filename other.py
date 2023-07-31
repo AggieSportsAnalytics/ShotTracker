@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import numpy as np
 import time
 
-cap = cv2.VideoCapture("test.MOV")
+cap = cv2.VideoCapture("DairyCourts.MOV")
 class_label_map = {
     0: "basketball",
     1: "rim"
@@ -17,7 +17,7 @@ height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # Define the codec and create VideoWriter object
 fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-out = cv2.VideoWriter("output.mp4", fourcc, fps, (width, height))
+out = cv2.VideoWriter("other.mp4", fourcc, fps, (width, height))
 
 start_time = time.time()
 prevY = 0
@@ -69,7 +69,7 @@ while True:
                 if y > rimY and prevY < rimY:
                     cv2.putText(frame, f"Ball height: {y}", (200,200), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)
                     cv2.putText(frame, f"Rim height: {rimY}", (200,300), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)
-                    if x > rimX - 10 and x < rimX + 10:
+                    if x > rimX - 100 and x < rimX + 100:
                         cv2.putText(frame, "IN", (500,500), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)  
                         if elapsed_time > 5:
                             counter += 1
