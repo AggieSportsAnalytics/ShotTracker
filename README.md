@@ -1,5 +1,10 @@
 # Basketball Shot Tracker 
 
+
+https://github.com/SACUCD/ShotTracker/assets/91163286/664020bd-7d61-4b91-97f0-f86ac47300b9
+
+
+
 ### 🏁 Determine whether or not a player makes or misses a basketball shot with Computer Vision.
 
 The Shot Tracker project is an advanced computer vision application that aims to accurately determine whether a person makes or misses a basketball shot. It is designed to help hoopers track their own makes and misses when shooting arouund. The project leverages YOLO v8, python,
