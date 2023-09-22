@@ -1,5 +1,4 @@
-# Basketball Shot Tracker 
-
+# Basketball Shot Tracker
 
 https://github.com/SACUCD/ShotTracker/assets/91163286/664020bd-7d61-4b91-97f0-f86ac47300b9
 
